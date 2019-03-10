@@ -237,12 +237,6 @@ p {
     }
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-
-}
-
 .wrap-content {
     width: 100vw;
     display: flex;
