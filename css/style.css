@@ -295,43 +295,10 @@ li {
 }
 
 .email a {
-    display: inline-block;
+    /* display: inline-block;
     padding: 0.8em;
     text-decoration: none;
-    position: relative;
-}
-
-a:after,
-a:before {
-    transition: all 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    content: '';
-    position: absolute;
-}
-
-a.meets:after,
-a.meets:before {
-    height: 25px;
-    width: 25px;
-    border-style: solid;
-    box-sizing: border-box;
-}
-
-a.meets:after {
-    border-width: 2px 0 0 2px;
-    top: 0;
-    left: 0;
-}
-
-a.meets:before {
-    border-width: 0 2px 2px 0;
-    bottom: 0;
-    right: 0;
-}
-
-a.meets:hover:after,
-a.meets:hover:before {
-    width: 100%;
-    height: 100%;
+    position: relative; */
 }
 
 .description h2 {
@@ -414,16 +381,12 @@ a.meets:hover:before {
 
 /* TESTING BUTTON */
 
-  .btnb{
+  .bubbly-button {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .bubbly-button {
-    /* font-size: 1em;
-    padding: 1em 2em;
-    margin-top: 100px;
-    margin-bottom: 60px; */
+    width: 218px;
+    height: 58px;
     font-family: 'Nexa-Bold';
     appearance: none;
     background-color: #1825AA;
