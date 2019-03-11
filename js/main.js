@@ -30,6 +30,35 @@ var wrapper = document.querySelector('.wrapper');
 var king = document.querySelector('.supremeghost');
 var scroller = document.querySelector('.scroller');
 var clicm = document.querySelector('.clicme');
+var wrapper = document.querySelector('.main-wrapper');
+
+wrapper.addEventListener("click", function(e) {
+  scroller.classList.toggle("testcolor");
+  color.classList.toggle("testcolor");
+  p.classList.toggle("testcolor");
+  colr.classList.toggle("testcolor");
+  link.classList.toggle("byebye");
+  linkm.classList.toggle("byebye");
+  prezs.classList.toggle("ok");
+});
+
+wrapper.addEventListener("click", function(e) {
+  particle.classList.toggle("ghost");
+});
+
+clicm.addEventListener("click", function(e) {
+  scroller.classList.toggle("testcolor");
+  color.classList.toggle("testcolor");
+  p.classList.toggle("testcolor");
+  colr.classList.toggle("testcolor");
+  link.classList.toggle("byebye");
+  linkm.classList.toggle("byebye");
+  prezs.classList.toggle("ok");
+});
+
+clicm.addEventListener("click", function(e) {
+  particle.classList.toggle("ghost");
+});
 
 colr.addEventListener("click", function(e) {
   scroller.classList.toggle("testcolor");
@@ -43,21 +72,7 @@ colr.addEventListener("click", function(e) {
 
 colr.addEventListener("click", function(e) {
   particle.classList.toggle("ghost");
-})
-
-clicm.addEventListener("click", function(e) {
-  scroller.classList.toggle("testcolor");
-  color.classList.toggle("testcolor");
-  p.classList.toggle("testcolor");
-  colr.classList.toggle("testcolor");
-  link.classList.toggle("byebye");
-  linkm.classList.toggle("byebye");
-  prezs.classList.toggle("ok");
 });
-
-clicm.addEventListener("click", function(e) {
-  particle.classList.toggle("ghost");
-})
   
 
 //BUTTON BUBBLE
@@ -77,4 +92,5 @@ var bubblyButtons = document.getElementsByClassName("bubbly-button");
 
 for (var i = 0; i < bubblyButtons.length; i++) {
   bubblyButtons[i].addEventListener('click', animateButton, false);
+  bubblyButtons[i].addEventListener('touchend', animateButton, false);
 }
