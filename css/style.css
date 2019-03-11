@@ -258,6 +258,13 @@ p {
     text-decoration-color: #1825AA;
 }
 
+.content-text a {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #1825AA;
+    text-decoration-color: #1825AA;
+}
+
 .content-text {
     width: 60%;
 }
@@ -416,7 +423,7 @@ a.meets:hover:before {
     padding: 1em 2em;
     margin-top: 100px;
     margin-bottom: 60px; */
-    -webkit-appearance: none;
+    font-family: 'Nexa-Bold';
     appearance: none;
     background-color: #1825AA;
     color: #fff;
