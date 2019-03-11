@@ -92,7 +92,7 @@ menu {
 /* ---- particles.js container ---- */
 
 #particles-js {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     height: 100%;
     background-color: rgb(5, 7, 38);
@@ -119,8 +119,8 @@ menu {
 }
 
 .main-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(5, 7, 38);
     display: flex;
     justify-content: center;
@@ -140,7 +140,6 @@ menu {
 }
 
 .prez.testcolor {
-    color: rgb(255, 255, 255);
     cursor: none;
     transform: translateY(-20vh);
 }
@@ -270,6 +269,7 @@ p {
     justify-content: center;
     flex-direction: column;
     color: #1825AA;
+    font-weight: 900;
 }
 
 ul {
@@ -290,7 +290,6 @@ li {
     display: inline-block;
     padding: 0.8em;
     text-decoration: none;
-    /* color: #fff; */
     position: relative;
 }
 
@@ -346,15 +345,10 @@ a.meets:hover:before {
 /* FOOTER */
 .footer {
     width: 100%;
-    display: inline-block;
-    text-align: center;
-}
-
-.contacts {
-    display: flex;
-    justify-content: space-between;
+    height: 8vh;
+    display: inline-flex;
+    justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .footer .credits p {
