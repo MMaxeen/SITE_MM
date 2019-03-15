@@ -74,7 +74,6 @@ colr.addEventListener("click", function(e) {
   particle.classList.toggle("ghost");
 });
   
-
 //BUTTON BUBBLE
 var animateButton = function(e) {
 

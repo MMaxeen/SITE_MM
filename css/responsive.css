@@ -47,21 +47,30 @@
     .content-text {
         width: 90%;
     }
-    
+
     .description {
-        margin-top: 4vh;
+        height: 80vh;
+        /* margin-top: 4vh; */
         width: 100%;
     }
 
     .contact {
         width: 100%;
+        height: 40vh;
         color: #1825AA;
+        display: flex;
+        justify-content: space-between;
     }
 
-    ul{
+    .contact-sort {
+        height: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .email {
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
 }
