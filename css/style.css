@@ -334,6 +334,7 @@ ul {
 
 .hover-2:hover {
     color: #1825AA;
+    cursor: pointer;
 }
 
 .link-wrapper {
@@ -344,7 +345,7 @@ ul {
 .hover-2:after {
     content: '';
     position: absolute;
-    left: 45%;
+    left: 42%;
     width: 8px;
     height: 8px;
     border-radius: 100%;
@@ -381,14 +382,25 @@ ul {
     color: #000;
 }
 
-.footer .credits a {
-    font-size: 16px;
-    color: #000;
-    transition: all ease-in-out 0.6s;
+.icom{
+    width: 30px;
+    height: 30px;
+    background-image: url(/svg/email.svg);
+    background-size: cover;
 }
 
-.footer .credits a:hover {
-    color: #1825AA;
+.icot{
+    width: 30px;
+    height: 30px;
+    background-image: url(/svg/twitter.svg);
+    background-size: cover;
+}
+
+.icol{
+    width: 30px;
+    height: 30px;
+    background-image: url(/svg/linkedin.svg);
+    background-size: cover;
 }
 
 /* ---- Scroller indicator---- */
@@ -482,6 +494,12 @@ ul {
 .bubbly-button:active {
     transform: scale(0.9);
     background-color: #152094;
+    box-shadow: 0 2px 25px rgba(24, 36, 170, 0.34);
+}
+
+.bubbly-button:hover {
+    transform: scale(1.06);
+    background-color: #1825AA;
     box-shadow: 0 2px 25px rgba(24, 36, 170, 0.34);
 }
 
