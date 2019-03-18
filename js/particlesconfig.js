@@ -6,7 +6,7 @@
         "value": 1,
         "density": {
           "enable": true,
-          "value_area": 4
+          "value_area": 6
         }
       },
       "color": {
