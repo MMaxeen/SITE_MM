@@ -234,6 +234,7 @@ p {
 
 .wrap-content {
     width: 100vw;
+    height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -245,7 +246,7 @@ p {
     justify-content: center;
     align-items: center;
     width: 60%;
-    height: 70%;
+    height: 80%;
 }
 
 .content-text a:link {
@@ -267,6 +268,7 @@ p {
 
 .contact {
     width: 40%;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -281,7 +283,7 @@ ul {
 
 .contact-sort {
     font-family: 'Nexa-Bold';
-    height: 50%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -350,7 +352,7 @@ ul {
     height: 8px;
     border-radius: 100%;
     opacity: 0;
-    transform: translateY(0vw);
+    transform: translateY(0vh);
     background-color: #1825AA;
     transition: all 0.5s ease-in-out;
 }
@@ -382,24 +384,24 @@ ul {
     color: #000;
 }
 
-.icom{
+.icom {
     width: 30px;
     height: 30px;
-    background-image: url(/svg/email.svg);
+    background-image: url("/svg/email.svg");
     background-size: cover;
 }
 
-.icot{
+.icot {
     width: 30px;
     height: 30px;
-    background-image: url(/svg/twitter.svg);
+    background-image: url("/svg/twitter.svg");
     background-size: cover;
 }
 
-.icol{
+.icol {
     width: 30px;
     height: 30px;
-    background-image: url(/svg/linkedin.svg);
+    background-image: url("/svg/linkedin.svg");
     background-size: cover;
 }
 
@@ -409,17 +411,17 @@ ul {
     background: rgba(255, 255, 255, 0.04);
     position: absolute;
     bottom: 0;
-    height: 180px;
+    height: 80px;
     left: 50%;
     overflow: hidden;
     cursor: pointer;
-    opacity: 0;
     transition: all 2s;
     border-radius: 50px;
+    transform: scale(0);
 }
 
 .scroller.testcolor {
-    opacity: 1;
+    transform: scale(1);
     transition: all 600ms;
 }
 .scroller::before {
@@ -437,7 +439,7 @@ ul {
         transform: translateY(-42px);
     }
     100% {
-        transform: translateY(200px);
+        transform: translateY(120px);
     }
 }
 
@@ -498,9 +500,10 @@ ul {
 }
 
 .bubbly-button:hover {
-    transform: scale(1.06);
+    transform: scale(1.1);
     background-color: #1825AA;
     box-shadow: 0 2px 25px rgba(24, 36, 170, 0.34);
+    transition: transform 0.6s ease-in-out;
 }
 
 .bubbly-button.animate:before {

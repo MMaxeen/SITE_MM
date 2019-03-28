@@ -93,3 +93,11 @@ for (var i = 0; i < bubblyButtons.length; i++) {
   bubblyButtons[i].addEventListener('click', animateButton, false);
   bubblyButtons[i].addEventListener('touchend', animateButton, false);
 };
+
+var scroller = document.querySelector('.scroller');
+
+scroller.addEventListener('click' , function(e) {
+  document.querySelector('.description').scrollIntoView({ 
+    behavior: 'smooth' 
+  })
+});
